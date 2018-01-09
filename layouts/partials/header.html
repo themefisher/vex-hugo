@@ -1,0 +1,25 @@
+<!--
+Header start
+==================== -->
+{{ with .Site.Params.header }}
+<section class="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center">
+      {{ with .image }}
+        <img src="{{ $.Site.BaseURL }}{{ .path }}" alt="{{ .alt }}">
+      {{ end }}
+      </div>
+      <div class="col-md-6">
+        <div class="block">
+          <h1 class="">{{ .title }}</h1>
+          <p>{{ .text }}</p>
+        {{ with .button }}
+          <a class="btn btn-main" href="{{ .link }}" role="button">{{ .text }}</a>
+        {{ end }}
+        </div>
+      </div>
+    </div><!-- .row close -->
+  </div><!-- .container close -->
+</section><!-- header close -->
+{{ end }}

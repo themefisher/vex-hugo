@@ -1,0 +1,133 @@
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+languageCode = "en-en"
+title = "VEX Bootstrap 4 Product Landing Page"
+theme = "vex"
+[params]
+  description = ""
+  # Additional meta
+  [[params.meta]]
+    name = ""
+    description = ""
+
+  # Put your custom stylesheets and scripts
+  custom_stylesheets = []
+  custom_scripts = []
+
+  # Navigation bar informations
+  [params.navbar]
+    logo = "Vex"
+    [[params.navbar.menu]]
+      link = "#"
+      text = "HOME"
+    [[params.navbar.menu]]
+      link = "#about"
+      text = "ABOUT"
+    [[params.navbar.menu]]
+      link = "#service"
+      text = "SERVICES"
+    [[params.navbar.menu]]
+      link = "#contact"
+      text = "CONTACT"
+
+  # Header
+  [params.header]
+    title = "Belive in Technology, Make the change"
+    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
+    [params.header.image]
+      path = "images/watch.png"
+      alt = "Watch"
+    [params.header.button]
+      link = "#about"
+      text = "Buy Now With $199"
+
+  # Features
+  [params.features]
+    title = "Our Core Features"
+    [params.features.image]
+      path = "images/watch-2.png"
+      alt = "Watch"
+    # Menu at the left of the image
+    [[params.features.left]]
+      icon = "tf-ion-ios-alarm-outline"
+      title = "Smooth Touch"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    [[params.features.left]]
+      icon = "tf-ion-ios-bell-outline"
+      title = "Elegant Design"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    [[params.features.left]]
+      icon = "tf-ion-ios-cart-outline"
+      title = "Easy Pricing"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    # Menu at the right of the image
+    [[params.features.right]]
+      icon = "tf-ion-ios-alarm-outline"
+      title = "Smooth Touch"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    [[params.features.right]]
+      icon = "tf-ion-ios-bell-outline"
+      title = "Elegant Design"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+    [[params.features.right]]
+      icon = "tf-ion-ios-cart-outline"
+      title = "Easy Pricing"
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?"
+
+  [params.promo]
+    title = "Designed by professional , the benefit for creative gigs"
+    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum.  \nLorem ipsum dolor sit amet, consectetur adipisicing elit. Quia vel labore, deleniti minima nisi, velit atque quaerat impedit ea maxime sunt accusamus at obcaecati dolor iure iusto omnis quis eum."
+    [params.promo.image]
+      path = "images/watch.png"
+      alt = "Watch"
+
+  [params.feature_list]
+    title = "Why Choose Apple Watch"
+    [[params.feature_list.items]]
+      image = "images/showcase/showcase-4.png"
+      title = "Lorem ipsum dolor sit amet."
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
+      button_link = ""
+      button_text = "Check Features"
+    [[params.feature_list.items]]
+      image = "images/showcase/showcase-3.png"
+      title = "Lorem ipsum dolor sit amet."
+      text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sed, assumenda. Tenetur sed esse, voluptas voluptate est veniam numquam, quis magni. Architecto minus suscipit quas, quo harum deserunt consequatur cumque!"
+      button_link = ""
+      button_text = "Check Features"
+
+  [params.gallery]
+    title = "Checkout some amazing Shorts"
+    # Set the image directory to use as base
+    directory = "images/showcase"
+    # Set the images to show in the gallery
+    images = ["showcase-1.png", "showcase-2.png", "showcase-3.png", "showcase-4.png", "showcase-5.png", "showcase-6.png", "showcase-7.png", "showcase-8.png"]
+
+  [params.call_to_action]
+    title = "Get Product Updates"
+    text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
+    placeholder = "Your Email Address Here"
+    button_text = "Subscribe"
+
+  [params.testimonials]
+    title = "Watch Review"
+    [[params.testimonials.blocks]]
+      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+      name = "Jonathon Andrew"
+      position = "CEO, Themefisher"
+      image = "images/avater.png"
+    [[params.testimonials.blocks]]
+      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+      name = "Jonathon Andrew"
+      position = "CEO, Themefisher"
+      image = "images/avater.png"
+    [[params.testimonials.blocks]]
+      text = "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
+      name = "Jonathon Andrew"
+      position = "CEO, Themefisher"
+      image = "images/avater.png"
+    [params.testimonials.button]
+      link = ""
+      text = "Grab You Product Now"
+
+  # Footer uses navbar data
+  # To modify the copyright section you need a Themefisher license

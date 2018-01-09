@@ -1,0 +1,26 @@
+{{ with .Site.Params.gallery }}
+<section class="gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h2>{{ .title }}</h2>
+        </div>
+        <div class="gallery-slider">
+        {{ range .images }}
+          {{ $basePath := printf "%s%s/" $.Site.BaseURL $.Site.Params.gallery.directory }}
+          <div class="block">
+            <div class="gallery-overlay">
+              <a href="{{ $basePath }}{{ . }}" class="image-popup gallery-popup">
+                <i class="tf-ion-ios-search"></i>
+              </a>
+            </div>
+            <img class="img-fluid" src="{{ $basePath }}{{ . }}" alt="">
+          </div>
+        {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

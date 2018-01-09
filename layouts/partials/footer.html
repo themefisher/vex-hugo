@@ -1,0 +1,21 @@
+{{ with .Site.Params.navbar }}
+<footer>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <a href="" class="footer-logo">{{ .logo }}</a>
+          <ul class="menu">
+          {{ range .menu }}
+            <li class="">
+              <a href="{{ .link }}">{{ .text }}</a>
+            </li>
+          {{ end }}
+          </ul>
+          <p class="copyright-text">Copyright &copy; <a href="http://www.Themefisher.com">Themefisher</a>| All right reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{{ end }}

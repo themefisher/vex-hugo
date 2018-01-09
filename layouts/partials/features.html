@@ -1,0 +1,37 @@
+<!--
+Feature start
+==================== -->
+{{ with .Site.Params.features }}
+<section class="feature section">
+  <div class="container">
+    <div class="row">
+      <div class="heading">
+        <h2>{{ .title }}</h2>
+      </div>
+      <div class="col-md-4">
+      {{ range .left }}
+        <div class="feature-box">
+          <i class="{{ .icon }}"></i>
+          <h4>{{ .title }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+      {{ end }}
+      </div>
+      {{ with .image }}
+      <div class="col-md-4 text-center">
+        <img src="{{ $.Site.BaseURL }}{{ .path }}" alt="{{ .alt }}">
+      </div>
+      {{ end }}
+      <div class="col-md-4">
+      {{ range .right }}
+        <div class="feature-box">
+          <i class="{{ .icon }}"></i>
+          <h4>{{ .title }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+      {{ end }}
+      </div>
+    </div>
+  </div><!-- .container close -->
+</section><!-- #service close -->
+{{ end }}

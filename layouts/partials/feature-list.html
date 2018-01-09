@@ -1,0 +1,42 @@
+{{ with .Site.Params.feature_list }}
+<section class="feature-list section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="heading">
+                  <h2>{{ .title }}</h2>
+              </div>
+          </div>
+      </div>
+    {{ range $index, $element := .items }}
+      {{ if ne (mod $index 2) 1 }}
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img class="" src="{{ $element.image }}" alt="">
+        </div>
+        <div class="col-md-6">
+          <div class="content mt-100">
+            <h4 class="subheading">{{ $element.title }}</h4>
+            <p>{{ $element.text }}</p>
+            <a href="{{ $element.button_link }}" class="btn btn-main btn-main-sm">{{ $element.button_text }}</a>
+          </div>
+        </div>
+      </div>
+      {{ else }}
+      <div class="row">
+        <div class="col-md-6">
+          <div class="content mt-100">
+            <h4 class="subheading">{{ $element.title }}</h4>
+            <p>{{ $element.text }}</p>
+            <a href="{{ $element.button_link }}" class="btn btn-main btn-main-sm">{{ $element.button_text }}</a>
+          </div>
+        </div>
+        <div class="col-md-6 text-center">
+          <img class="" src="{{ $element.image }}" alt="">
+        </div>
+      </div>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
