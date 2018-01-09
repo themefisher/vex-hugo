@@ -2,7 +2,7 @@
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
 name = "Vex"
-license = "Themefisher license"
+license = "MIT"
 licenselink = "https://github.com/karju/vex-hugo/blob/master/LICENSE.md"
 description = "Vex by Themefisher ported to Hugo"
 homepage = "http://siteforthistheme.com/"
