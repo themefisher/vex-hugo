@@ -1,7 +1,7 @@
 baseurl = "https://www.example.com/"
 languageCode = "en-en"
 title = "VEX Bootstrap 4 Product Landing Page"
-theme = "vex"
+theme = "vex-hugo"
 [params]
   description = ""
   # Additional meta
