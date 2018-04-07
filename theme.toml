@@ -3,16 +3,16 @@
 
 name = "Vex"
 license = "MIT"
-licenselink = "https://github.com/karju/vex-hugo/blob/master/LICENSE.md"
+licenselink = "https://github.com/themefisher/vex-hugo/blob/master/LICENSE.md"
 description = "Vex by Themefisher ported to Hugo"
-homepage = "http://siteforthistheme.com/"
+homepage = "https://themefisher.com/products/vex-bootstrap4-product-landing-page-website-template/"
 tags = ["onepage", "bootstrap", "product"]
 features = ["onepage", "product"]
 min_version = 0.15
 
 [author]
-  name = "Giacomo Mariani"
-  homepage = "https://karju-dev.github.io"
+  name = "Giacomo Mariani for Themefisher"
+  homepage = "https://themefisher.com/"
 
 # If porting an existing theme
 [original]
