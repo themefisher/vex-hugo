@@ -1,4 +1,4 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://www.example.com/"
 languageCode = "en-en"
 title = "VEX Bootstrap 4 Product Landing Page"
 theme = "vex"
