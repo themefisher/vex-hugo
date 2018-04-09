@@ -17,7 +17,7 @@ Then clone this repository:
 
 ```
   $ cd <SITENAME>/themes
-  $ git clone https://github.com/karju-dev/vex-hugo.git
+  $ git clone https://github.com/themefisher/vex-hugo.git
 ```
 
 Now take a look at the exampleSite folder and you're ready to go!
