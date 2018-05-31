@@ -1,17 +1,19 @@
 baseurl = "https://www.example.com/"
-languageCode = "en-en"
+languageCode = "en"
 title = "VEX Bootstrap 4 Product Landing Page"
 theme = "vex-hugo"
+
 [params]
   description = ""
-  # Additional meta
-  [[params.meta]]
-    name = ""
-    description = ""
 
   # Put your custom stylesheets and scripts
   custom_stylesheets = []
   custom_scripts = []
+
+  # Additional meta
+  [[params.meta]]
+    name = ""
+    description = ""
 
   # Navigation bar informations
   [params.navbar]
@@ -31,7 +33,7 @@ theme = "vex-hugo"
 
   # Header
   [params.header]
-    title = "Belive in Technology, Make the change"
+    title = "Believe in Technology, Make the change"
     text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
     [params.header.image]
       path = "images/watch.png"
@@ -130,4 +132,3 @@ theme = "vex-hugo"
       text = "Grab You Product Now"
 
   # Footer uses navbar data
-  # To modify the copyright section you need a Themefisher license
