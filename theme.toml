@@ -10,7 +10,7 @@ features = ["onepage", "product"]
 min_version = 0.16
 
 [author]
-  name = "Giacomo Mariani for Themefisher"
+  name = "Giacomo Mariani (@karjudev) for Themefisher"
   homepage = "https://themefisher.com/"
 
 [original]

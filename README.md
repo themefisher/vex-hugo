@@ -6,7 +6,7 @@ Vex is a product landing page theme/template created by [Themefisher] based on t
 It is fully responsive and beautifully crafted with Product Showcase, Testimonials and Email Subscription sections.
 See https://themefisher.com/products/vex-bootstrap4-product-landing-page-website-template/ for more information.
 
-And now, the Vex theme has been ported to [Hugo], and made freely available to all!
+And now, Vex has been ported to [Hugo] thanks to the great work of Giacomo Mariani (@karjudev)!
 
 ## Usage
 Create a new Hugo site by typing
