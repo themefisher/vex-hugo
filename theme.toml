@@ -1,8 +1,8 @@
 # theme.toml for the Vex Hugo theme
 
 name = "Vex"
-license = "MIT"
-licenselink = "https://github.com/themefisher/vex-hugo/blob/master/LICENSE.md"
+license = "CC-BY-3.0"
+licenselink = "https://github.com/themefisher/vex-hugo/blob/master/LICENSE"
 description = "Vex by Themefisher ported to Hugo"
 homepage = "https://github.com/themefisher/vex-hugo"
 tags = ["onepage", "bootstrap", "product"]
