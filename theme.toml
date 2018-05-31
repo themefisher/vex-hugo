@@ -5,7 +5,7 @@ license = "CC-BY-3.0"
 licenselink = "https://github.com/themefisher/vex-hugo/blob/master/LICENSE"
 description = "Vex by Themefisher ported to Hugo"
 homepage = "https://github.com/themefisher/vex-hugo"
-tags = ["onepage", "bootstrap", "product"]
+tags = ["onepage", "bootstrap", "product", "themefisher"]
 features = ["onepage", "product"]
 min_version = 0.16
 
