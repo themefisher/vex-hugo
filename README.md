@@ -26,9 +26,10 @@ Now take a look at the exampleSite folder and you're ready to go!
 
 ## License
 
-**_Vex_ for Hugo** is ported from https://themefisher.com/products/vex-bootstrap4-product-landing-page-website-template/ and is under the [Creative Commons Attribution 3.0 (CC-BY-3.0) License, see https://themefisher.com/license/ for more information.
+This Template is released under [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://creativecommons.org/licenses/by/3.0/).
+If you want to remove the credit, simply make a [donation](https://www.paypal.me/Themefisher) so that we can run our contribution to the Hugo community.
 
-If you like what you see in **_Vex_ for Hugo**, please spread the word!
+[![HELP US TO GROW](https://user-images.githubusercontent.com/16266381/45262626-1e0ce880-b43c-11e8-9698-1b95f143e240.png)](https://www.paypal.me/Themefisher)
 
 ## About Themefisher
 
@@ -37,3 +38,5 @@ Visit us at https://themefisher.com/ to see other great-looking themes and inspi
 
 [Hugo]: https://gohugo.io/
 [Themefisher]: https://themefisher.com/
+
+## We are available for Hiring of your next HUGO project. Drop Us a mail [themefisher@gmail.com](mailto:themefisher@gmail.com)
