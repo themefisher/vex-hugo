@@ -1,12 +1,6 @@
 <div align="center">
 
 # [Vex Hugo](https://themefisher.com/hugo-themes/)
-
-[![GitHub stars](https://img.shields.io/github/stars/themefisher/vex-hugo.svg)](https://github.com/themefisher/vex-hugo/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/themefisher/vex-hugo.svg)](https://github.com/themefisher/vex-hugo/issues) 
-[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themefisher/vex-hugo.svg?maxAge=2592000)]() 
-[![GitHub forks](https://img.shields.io/github/forks/themefisher/vex-hugo.svg)](https://github.com/themefisher/vex-hugo/network)
-
 <img src="https://user-images.githubusercontent.com/37659754/54080628-86bb1c00-431e-11e9-9094-b69cff97a5e9.gif" alt="screenshot" width="100%">
 
 </div>
@@ -27,7 +21,6 @@ See https://themefisher.com/products/vex-bootstrap4-product-landing-page-website
 - [More Hugo Themes](https://themefisher.com/hugo-themes/)
 
 ## Demo
-![screenshot](https://raw.githubusercontent.com/themefisher/vex-hugo/master/images/screenshot.png)
 [Live Demo](https://themes.gohugo.io/theme/vex-hugo/).
 
 ## Installation
