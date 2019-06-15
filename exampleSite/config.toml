@@ -22,14 +22,14 @@ theme = "vex-hugo"
       link = "#"
       text = "HOME"
     [[params.navbar.menu]]
-      link = "#about"
-      text = "ABOUT"
+      link = "#feature"
+      text = "Features"
     [[params.navbar.menu]]
-      link = "#service"
-      text = "SERVICES"
+      link = "#gallary"
+      text = "Gallery"
     [[params.navbar.menu]]
-      link = "#contact"
-      text = "CONTACT"
+      link = "#testimonial"
+      text = "Testimonial"
 
   # Header
   [params.header]
@@ -39,7 +39,7 @@ theme = "vex-hugo"
       path = "images/watch.png"
       alt = "Watch"
     [params.header.button]
-      link = "#about"
+      link = "#"
       text = "Buy Now With $199"
 
   # Features
