@@ -25,7 +25,7 @@ theme = "vex-hugo"
       link = "#feature"
       text = "Features"
     [[params.navbar.menu]]
-      link = "#gallary"
+      link = "#gallery"
       text = "Gallery"
     [[params.navbar.menu]]
       link = "#testimonial"
