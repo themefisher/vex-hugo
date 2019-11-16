@@ -103,6 +103,7 @@ gallery:
 ################################## call to action ###################
 cta:
   enable : true
+  bgImage : "images/call-to-action.jpg"
   title : "Get Product Updates"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod"
   placeholder : "Your Email Address Here"
