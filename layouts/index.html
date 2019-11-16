@@ -1,38 +1,17 @@
-<!DOCTYPE html>
-<html class="no-js">
-  <head>
-    {{- partial "meta.html" . }}
+{{ define "main" }}
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  {{- partial "banner.html" . }}
 
-    {{- partial "stylesheets.html" . }}
-  </head>
+  {{- partial "features.html" . }}
 
-  <body id="body">
+  {{- partial "promo.html" . }}
 
-  	<div id="preloader-wrapper">
-  		<div class="pre-loader"></div>
-  	</div>
+  {{- partial "feature-list.html" . }}
 
-    {{- partial "navbar.html" . }}
+  {{- partial "gallery.html" . }}
 
-    {{- partial "header.html" . }}
+  {{- partial "call-to-action.html" . }}
 
-    {{- partial "features.html" . }}
+  {{- partial "testimonials.html" . }}
 
-    {{- partial "promo.html" . }}
-
-    {{- partial "feature-list.html" . }}
-
-    {{- partial "gallery.html" . }}
-
-    {{- partial "call-to-action.html" . }}
-
-    {{- partial "testimonials.html" . }}
-
-    {{- partial "footer.html" . }}
-
-    {{- partial "scripts.html" . }}
-
-  </body>
-</html>
+{{ end }}

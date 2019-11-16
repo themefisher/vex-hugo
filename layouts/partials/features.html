@@ -1,35 +1,36 @@
-<!-- Feature start -->
-{{- with .Site.Params.features }}
-<section class="feature section" id="feature">
+{{- if .Site.Data.homepage.features.enable }}
+{{- with .Site.Data.homepage.features }}
+<section class="section" id="features">
   <div class="container">
     <div class="row">
-      <div class="heading">
-        <h2>{{ .title }}</h2>
+      <div class="col-12">
+        <div class="heading">
+          <h2>{{ .title | markdownify }}</h2>
+        </div>
       </div>
       <div class="col-md-4">
-      {{- range .left }}
-        <div class="feature-box">
-          <i class="{{ .icon }}"></i>
-          <h4>{{ .title }}</h4>
-          <p>{{ .text }}</p>
+        {{ range .leftSide }}
+        <div class="mb-40 text-center text-md-left">
+          <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
+          <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
         </div>
-      {{- end }}
+        {{ end }}
       </div>
-      {{- with .image }}
-      <div class="col-md-4 text-center">
-        <img src="{{ relURL .path }}" alt="{{ .alt }}">
+      <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
       </div>
-      {{- end }}
       <div class="col-md-4">
-      {{- range .right }}
-        <div class="feature-box">
-          <i class="{{ .icon }}"></i>
-          <h4>{{ .title }}</h4>
-          <p>{{ .text }}</p>
+          {{ range .rightSide }}
+        <div class="mb-40 text-center text-md-left">
+          <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
+          <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
         </div>
-      {{- end }}
+        {{ end }}
       </div>
     </div>
   </div><!-- .container close -->
-</section><!-- #service close -->
+</section>
+{{- end }}
 {{- end }}
