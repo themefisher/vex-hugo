@@ -37,17 +37,17 @@ theme = "vex-hugo"
     
   [[menu.main]]
   name = "Feature"
-  URL = "#feature"
+  URL = "feature"
   weight = 2
   
   [[menu.main]]
   name = "Gallery"
-  URL = "#gallery"
+  URL = "gallery"
   weight = 3
   
   [[menu.main]]
   name = "Testimonial"
-  URL = "#testimonial"
+  URL = "testimonial"
   weight = 4
 
 
