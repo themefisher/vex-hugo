@@ -7,7 +7,7 @@ description = "Vex by Themefisher ported to Hugo"
 homepage = "https://gethugothemes.com/products/vex-hugo-theme/"
 tags = ["onepage", "bootstrap", "product", "themefisher"]
 features = ["onepage", "product"]
-min_version = "0.58.0"
+min_version = "0.54.0"
 
 [author]
   name = "Themefisher"
