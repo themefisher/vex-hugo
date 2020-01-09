@@ -4,9 +4,15 @@ banner:
   title : "Believe in Technology, Make the change"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
   image : "images/watch.png"
-  button:
-    link : "#"
-    label : "Buy Now With $199"
+  button: "Buy Now With $199"
+
+############################## product ###########################
+product:
+  name : "Smart watch"
+  image : "images/watch.png"
+  price : "199"
+  colors : ["black","white","gray"]
+  sizes : ["small","medium","large"]
 
 ############################# Feature ############################
 features:
@@ -131,11 +137,3 @@ testimonial:
       designation : "CEO, Themefisher"
       image : "images/avater.png"
       content : "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents."
-
-
-  ################# button ###############
-  button:
-    enable : true
-    label : "Grab You Product Now"
-    link : "#"
-      

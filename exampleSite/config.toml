@@ -20,6 +20,8 @@ theme = "vex-hugo"
   URL = "css/owl.carousel.css"
   [[params.plugins.css]]
   URL = "css/magnific-popup.css"
+  [[params.plugins.css]]
+  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 
   # JS Plugins
   [[params.plugins.js]]
@@ -30,6 +32,8 @@ theme = "vex-hugo"
   URL = "js/owl.carousel.min.js"
   [[params.plugins.js]]
   URL = "js/jquery.magnific-popup.min.js"
+  [[params.plugins.js]]
+  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 
 
 ###################################### Navigation ######################################
@@ -59,10 +63,13 @@ home = "Home"
 description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+google_analitycs_id = "Your ID"
+# snipcart public api key
+snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
 # copyright
 copyright = "Copyright 2019 &copy; [themefisher](http://www.Themefisher.com) | All right reserved."
 
-  # Preloader
-  [params.preloader]
-  enable = true
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
