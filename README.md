@@ -41,6 +41,10 @@ $ git clone git@github.com:themefisher/vex-hugo.git
 * Email Subscription Section
 * Documented codes.
 
+## Icons
+
+To view the catalog of available themefisher-font icons, clone the repository from https://github.com/themefisher/themefisher-font and open `index.html` on your local computer.
+
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Vex Template. Please Search [existing issues](https://github.com/themefisher/vex-hugo/issues). It’s possible someone has already reported the same problem.
