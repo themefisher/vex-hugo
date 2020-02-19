@@ -3,7 +3,7 @@
 <img src="https://user-images.githubusercontent.com/37659754/54080628-86bb1c00-431e-11e9-9094-b69cff97a5e9.gif" alt="screenshot" width="100%">
 </div>
 
-Vex is a product landing page theme/template created by [Themefisher] based on the latest [Bootstrap 4](https://getbootstrap.com/) framework.
+Vex is a product landing page theme/template created by [Themefisher](www.themefisher.com) based on the latest [Bootstrap 4](https://getbootstrap.com/) framework.
 It is fully responsive and beautifully crafted with Product Showcase, Testimonials and Email Subscription sections.
 See https://themefisher.com/products/vex-bootstrap4-product-landing-page-website-template/ for more information.
 
