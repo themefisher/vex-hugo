@@ -1,7 +1,3 @@
-$(window).load(function () {
-  $("#preloader-wrapper").fadeOut("slow");
-});
-
 $(document).ready(function () {
 
   $(".gallery-slider").owlCarousel({
