@@ -1,7 +1,7 @@
 <!-- navigation -->
-<header>
+<header class="sticky-top bg-white">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="{{ .Site.BaseURL }}">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> {{ else }} {{ .Site.Title }} {{ end }}</a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
