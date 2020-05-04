@@ -7,7 +7,7 @@
         <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
         <p class="text-white">{{ .content | markdownify }}</p>
         <div class="input-group">
-          <form action="#" class="w-100">
+          <form name="contact" {{ if .args }}{{ .args | safeHTMLAttr }}{{ else }}action="#"{{ end }} class="w-100">
             <input type="email" id="email" class="form-control" name="email" placeholder="{{ .placeholder }}"
               required>
             <button class="btn btn-main btn-submit" type="submit">Subscribe</button>
