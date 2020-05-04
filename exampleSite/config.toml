@@ -5,54 +5,52 @@ title = "Vex"
 theme = "vex-hugo"
 
 #################################### Plugins ##########################################
-[params.plugins]
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700"
-  [[params.plugins.css]]
-  URL = "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700"
-  [[params.plugins.css]]
-  URL = "css/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "css/themefisher-fonts.css"
-  [[params.plugins.css]]
-  URL = "css/owl.carousel.css"
-  [[params.plugins.css]]
-  URL = "css/magnific-popup.css"
-  [[params.plugins.css]]
-  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+# CSS Plugins
+[[params.plugins.css]]
+URL = "https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700"
+[[params.plugins.css]]
+URL = "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700"
+[[params.plugins.css]]
+URL = "css/bootstrap.min.css"
+[[params.plugins.css]]
+URL = "css/themefisher-fonts.css"
+[[params.plugins.css]]
+URL = "css/owl.carousel.css"
+[[params.plugins.css]]
+URL = "css/magnific-popup.css"
+[[params.plugins.css]]
+URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "js/jquery-2.1.1.min.js"
-  [[params.plugins.js]]
-  URL = "js/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "js/owl.carousel.min.js"
-  [[params.plugins.js]]
-  URL = "js/jquery.magnific-popup.min.js"
-  [[params.plugins.js]]
-  URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+# JS Plugins
+[[params.plugins.js]]
+URL = "js/jquery-2.1.1.min.js"
+[[params.plugins.js]]
+URL = "js/bootstrap.min.js"
+[[params.plugins.js]]
+URL = "js/owl.carousel.min.js"
+[[params.plugins.js]]
+URL = "js/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 
 
 ###################################### Navigation ######################################
-[menu]
-    
-  [[menu.main]]
-  name = "Feature"
-  URL = "feature"
-  weight = 2
-  
-  [[menu.main]]
-  name = "Gallery"
-  URL = "gallery"
-  weight = 3
-  
-  [[menu.main]]
-  name = "Testimonial"
-  URL = "testimonial"
-  weight = 4
+
+[[menu.main]]
+name = "Feature"
+URL = "feature"
+weight = 2
+
+[[menu.main]]
+name = "Gallery"
+URL = "gallery"
+weight = 3
+
+[[menu.main]]
+name = "Testimonial"
+URL = "testimonial"
+weight = 4
 
 
 ########################### Default parameters ##########################
