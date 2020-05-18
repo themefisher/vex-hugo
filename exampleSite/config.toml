@@ -61,7 +61,7 @@ home = "Home"
 description = "This is meta description"
 author = "Themefisher"
 # Google Analitycs
-google_analitycs_id = "Your ID"
+google_analitycs_id = "" # Your ID
 # snipcart public api key
 snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
 # copyright
