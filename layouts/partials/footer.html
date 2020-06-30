@@ -3,18 +3,18 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <a href="{{ .Site.BaseURL }}" class="footer-logo mb-4">{{ if .Site.Params.logo }} <img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"> {{ else }} {{ .Title }} {{ end }}</a>
+          <a href="{{ site.BaseURL }}" class="footer-logo mb-4">{{ if site.Params.logo }} <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"> {{ else }} {{ .Title }} {{ end }}</a>
           <ul class="list-inline footer-menu">
             <li class="list-inline-item">
-              <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+              <a href="{{ site.BaseURL }}">{{ site.Params.home }}</a>
             </li>
-            {{ range .Site.Menus.main }}
+            {{ range site.Menus.main }}
             <li class="list-inline-item">
               <a class="page-scroll" href="#{{ .URL }}">{{ .Name }}</a>
             </li>
             {{ end }}
           </ul>
-          <p class="copyright-text">{{ .Site.Params.copyright | markdownify }}</p>
+          <p class="copyright-text">{{ site.Params.copyright | markdownify }}</p>
         </div>
       </div>
     </div>
@@ -23,10 +23,10 @@
 
 
 <!-- Snipcart public key -->
-<div hidden id="snipcart" data-api-key="{{ .Site.Params.snipcart_api }}"></div>
+<div hidden id="snipcart" data-api-key="{{ site.Params.snipcart_api }}"></div>
 
 <!-- JS Plugins -->
-{{ range .Site.Params.plugins.js}}
+{{ range site.Params.plugins.js}}
 <script src="{{ .URL | absURL }}"></script>
 {{ end }}
 
@@ -35,7 +35,7 @@
 <script src="{{ $script.Permalink }}"></script>
 
 <!-- google analitycs -->
-{{ with .Site.Params.google_analitycs_id }}
+{{ with site.Params.google_analitycs_id }}
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;

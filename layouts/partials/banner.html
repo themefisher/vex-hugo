@@ -1,9 +1,9 @@
-{{- if .Site.Data.homepage.banner.enable }}
+{{- if site.Data.homepage.banner.enable }}
 <!-- hero area -->
 <section class="section">
 	<div class="container">
 		<div class="row">
-			{{- with .Site.Data.homepage.banner }}
+			{{- with site.Data.homepage.banner }}
 			<div class="col-md-6 text-center mb-5 mb-md-0">
 				<img class="img-fluid" src="{{ .image | absURL }}" alt="">
 			</div>
@@ -13,7 +13,7 @@
 					<p class="mb-4">{{ .content | markdownify }}</p>
 					{{- end }}
 					<button class="snipcart-add-item btn btn-main" 
-					  {{with .Site.Data.homepage.product }} data-item-id="{{ .name | urlize }}__{{ .price }}"
+					  {{with site.Data.homepage.product }} data-item-id="{{ .name | urlize }}__{{ .price }}"
 						data-item-name="{{ .name }}"
 						data-item-image="{{ .image | absURL }}"
 						data-item-price="{{ .price }}" data-item-url="{{ .Permalink }}" 
@@ -24,7 +24,7 @@
 						{{ if .sizes }} 
 						data-item-custom2-name="Choose Size"
 						data-item-custom2-options="{{ range $index, $element:= .sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
-						{{ end }}{{ end }}>{{ .Site.Data.homepage.banner.button }}</button>
+						{{ end }}{{ end }}>{{ site.Data.homepage.banner.button }}</button>
 				</div>
 			</div>
 		</div><!-- .row close -->

@@ -1,7 +1,7 @@
-{{ if .Site.Data.homepage.testimonial.enable }}
+{{ if site.Data.homepage.testimonial.enable }}
 <section class="testimonials section" id="testimonial">
   <div class="container">
-    {{ with .Site.Data.homepage.testimonial }}
+    {{ with site.Data.homepage.testimonial }}
     <div class="row justify-content-center">
       <div class="col-12">
         <div class="heading">
@@ -25,7 +25,7 @@
     {{ end }}
     <div class="row mt-100">
       <div class="col-md-12 text-center">
-        <button class="snipcart-add-item btn btn-main" {{with .Site.Data.homepage.product }}
+        <button class="snipcart-add-item btn btn-main" {{with site.Data.homepage.product }}
           data-item-id="{{ .name | urlize }}__{{ .price }}" data-item-name="{{ .name }}"
           data-item-image="{{ .image | absURL }}" data-item-price="{{ .price }}" data-item-url="{{ .Permalink }}"
           {{ if .colors }} data-item-custom1-name="Choose Color"
