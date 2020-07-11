@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-between">
+      {{ with .Params.office }}
+      <div class="col-lg-4 col-sm-6">
+        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        <p>{{ .content | markdownify }}</p>
+
+        <ul class="list-unstyled contact-list">
+          <li class="mb-3"><a href="tel:{{ .mobile }}"><i class="tf-ion-ios-telephone mr-2"></i>
+              {{ .mobile }}</a></li>
+          <li class="mb-3"><a href="mailto:{{ .email }}"><i class="tf-ion-email mr-2"></i>{{ .email }}</a></li>
+          <li class="mb-3"><i class="tf-ion-ios-location mr-2"></i>{{ .location }}
+          </li>
+        </ul>
+      </div>
+      {{ end }}
+      <div class="col-lg-3 col-sm-6">
+        {{ with .Params.opennig_hour }}
+        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        <ul class="list-unstyled">
+          {{ range .day_time }}
+          <li class="mb-2">{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+      <div class="col-lg-4">
+        <h3 class="mb-4">{{ .Title }}</h3>
+        <form action="{{ site.Params.contact_form_action }}" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-main btn-main-sm btn-block">{{ i18n "send" }}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="sticky-image">
+          <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 offset-lg-1">
+        <h1 class="mb-4">{{ .Title }}</h1>
+        <p><strong>Colors:</strong> {{delimit .Params.colors ", "}}</p>
+        <p><strong>Sizes:</strong> {{delimit .Params.sizes ", "}}</p>
+        <p class="price py-4">{{if .Params.discount_price}}{{site.Params.currency}}{{.Params.discount_price}}{{else}}{{site.Params.currency}}{{.Params.price}}{{end}}
+        {{if .Params.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.price }}</s>{{end}}
+        </p>
+        <button class="snipcart-add-item btn btn-main mb-5" 
+					  data-item-id="{{ .Title | urlize }}__{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}"
+						data-item-name="{{ .Title }}"
+						data-item-image="{{ .Params.image | absURL }}"
+						data-item-price="{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}" data-item-url="{{ .Permalink }}" 
+						{{ if .Params.colors }}
+						data-item-custom1-name="Choose Color"
+						data-item-custom1-options="{{ range $index, $element:= .Params.colors }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
+						{{ end }}
+						{{ if .Params.sizes }}
+						data-item-custom2-name="Choose Size"
+						data-item-custom2-options="{{ range $index, $element:= .Params.sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
+            {{ end }}>{{ i18n "add_to_cart"}}</button>
+            <div class="content">{{.Content}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

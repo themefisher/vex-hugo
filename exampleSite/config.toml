@@ -1,73 +1,129 @@
 ################################### Default Configuration ############################
 baseurl = "https://www.example.com/"
-languageCode = "en"
-title = "Vex"
+title = "Vex | hugo landing page template"
 theme = "vex-hugo"
+# post excert
+summarylength = "20"
+# google analytics
+googleAnalytics = "" # Ex: UA-123-45
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
 
 #################################### Plugins ##########################################
 
 # CSS Plugins
 [[params.plugins.css]]
-URL = "https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700"
+link = "https://fonts.googleapis.com/css?family=Droid+Serif:400|Josefin+Sans:300,400,600,700"
 [[params.plugins.css]]
-URL = "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700"
+link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-URL = "css/bootstrap.min.css"
+link = "plugins/themefisher-font/themefisher-font.min.css"
 [[params.plugins.css]]
-URL = "css/themefisher-fonts.css"
+link = "plugins/owl-carousel/owl.carousel.css"
 [[params.plugins.css]]
-URL = "css/owl.carousel.css"
-[[params.plugins.css]]
-URL = "css/magnific-popup.css"
-[[params.plugins.css]]
-URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 
 # JS Plugins
 [[params.plugins.js]]
-URL = "js/jquery-2.1.1.min.js"
+link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
-URL = "js/bootstrap.min.js"
+link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-URL = "js/owl.carousel.min.js"
+link = "plugins/owl-carousel/owl.carousel.min.js"
 [[params.plugins.js]]
-URL = "js/jquery.magnific-popup.min.js"
-[[params.plugins.js]]
-URL = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 
 
 ###################################### Navigation ######################################
 
+# homepage section menu
 [[menu.main]]
-name = "Feature"
-URL = "feature"
+name = "Home"
+URL = "/"
+weight = 1
+
+# main menu
+[[menu.main]]
+name = "Products"
+URL = "products"
 weight = 2
 
+# main menu
 [[menu.main]]
-name = "Gallery"
-URL = "gallery"
+name = "Blog"
+URL = "blog"
 weight = 3
 
 [[menu.main]]
-name = "Testimonial"
-URL = "testimonial"
+name = "Contact"
+URL = "contact"
+weight = 4
+
+# footer menu
+[[menu.footer]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[menu.footer]]
+name = "Blog"
+URL = "blog"
+weight = 2
+
+[[menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 3
+
+[[menu.footer]]
+name = "Privacy & Policy"
+URL = "#"
 weight = 4
 
 
 ########################### Default parameters ##########################
 [params]
-logo = ""
-home = "Home"
+logo = "images/logo.png"
+logo_width = "100px"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
-# Google Analitycs
-google_analitycs_id = "" # Your ID
+# currency
+currency = "$"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
 # snipcart public api key
 snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1NDA4NjM4"
-# copyright
-copyright = "Copyright 2020 &copy; [themefisher](http://www.Themefisher.com) | All right reserved."
 
 # Preloader
 [params.preloader]
 enable = true
 preloader = "" # use .png , .svg or .gif format
+
+# Subscription
+[params.subscription]
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+# copyright
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+# copyright
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"

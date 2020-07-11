@@ -1,0 +1,28 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.products.enable }}
+<section class="gallery" id="products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h2>{{ $data.homepage.products.title | markdownify }}</h2>
+        </div>
+
+        <div class="gallery-slider">
+          {{ range (where .Site.RegularPages "Section" "products") }}
+          <div class="block">
+            <div class="gallery-overlay">
+              <a href="{{ .Permalink }}" class="gallery-popup">
+                <i class="tf-ion-ios-search"></i>
+              </a>
+            </div>
+            <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="{{.Title}}">
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

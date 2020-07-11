@@ -1,12 +1,41 @@
 {{ define "main" }}
 
-<section class="section">
+<section class="feature-list section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        {{ .Content }}
+      <div class="col-12 text-center mb-5">
+        <h1>{{.Title}}</h1>
       </div>
     </div>
+    {{ range $index, $element := (where .Site.RegularPages "Section" "blog") }}
+    {{- if ne (mod $index 2) 1 }}
+    <div class="row mb-40">
+      <div class="col-md-6 text-center mb-5 mb-lg-0">
+        <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="">
+      </div>
+      <div class="col-md-6 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .Title | markdownify }}</h4>
+          <p>{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-main btn-main-sm">{{ i18n "read_more" }}</a>
+        </div>
+      </div>
+    </div>
+    {{- else }}
+    <div class="row mb-40">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .Title | markdownify }}</h4>
+          <p>{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-main btn-main-sm">{{ i18n "read_more" }}</a>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
+        <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="">
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
   </div>
 </section>
 

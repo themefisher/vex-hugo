@@ -1,0 +1,26 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.subscription.enable }}
+{{- with $data.homepage.subscription }}
+<section class="call-to-action section bg-opacity" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 text-center mx-auto">
+        <h2 class="subheading text-white">{{ .title | markdownify }}</h2>
+        <p class="text-white">{{ .content | markdownify }}</p>
+        <div class="input-group">
+          <form action="{{ site.Params.mailchimp_form_action }}" method="post" class="w-100" name="mc-embedded-subscribe-form" target="_blank">
+            <input type="email" id="email" class="form-control" name="email" placeholder="{{ .placeholder }}"
+              required>
+            <button class="btn btn-main btn-submit" type="submit" name="subscribe">{{i18n "subscribe"}}</button>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="{{ site.Params.mailchimp_form_name }}" tabindex="-1">
+            </div>
+          </form>
+        </div><!-- /input-group -->
+      </div>
+    </div>
+  </div>
+</section><!-- #call-to-action close -->
+{{- end }}
+{{- end }}

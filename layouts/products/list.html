@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section class="section gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1>{{.Title}}</h1>
+      </div>
+      {{ range (where .Site.RegularPages "Section" "products") }}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="block">
+          <div class="gallery-overlay">
+            <a href="{{ .Permalink }}" class="gallery-popup">
+              <i class="tf-ion-ios-search"></i>
+            </a>
+          </div>
+          <img class="img-fluid" src="{{ .Params.image | absURL }}" alt="{{.Title}}">
+        </div>
+        <h4 class="text-center">{{.Title}}</h4>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

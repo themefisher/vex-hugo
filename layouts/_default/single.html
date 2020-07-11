@@ -3,8 +3,16 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12">
-        {{ .Content }}
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="sticky-image">
+          <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-7 offset-lg-1">
+        <h1 class="mb-4">{{.Title | markdownify}}</h1>
+        <div class="content">
+          {{.Content}}
+        </div>
       </div>
     </div>
   </div>

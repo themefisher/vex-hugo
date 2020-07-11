@@ -1,5 +1,7 @@
-{{- if site.Data.homepage.features.enable }}
-{{- with site.Data.homepage.features }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{- if $data.homepage.features.enable }}
+{{- with $data.homepage.features }}
 <section class="section" id="feature">
   <div class="container">
     <div class="row">
@@ -9,7 +11,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        {{ range .leftSide }}
+        {{ range .left_side }}
         <div class="mb-40 text-center text-md-left">
           <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
           <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>
@@ -21,7 +23,7 @@
         <img class="img-fluid" src="{{ .image | absURL }}" alt="">
       </div>
       <div class="col-md-4">
-          {{ range .rightSide }}
+          {{ range .right_side }}
         <div class="mb-40 text-center text-md-left">
           <i class="d-inlin-block h2 mb-10 {{ .icon }}"></i>
           <h4 class="font-weight-bold mb-2">{{ .title | markdownify }}</h4>

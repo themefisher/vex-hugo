@@ -1,5 +1,7 @@
-{{ if site.Data.homepage.promo.enable }}
-{{ with site.Data.homepage.promo }}
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.promo.enable }}
+{{ with $data.homepage.promo }}
 <section class="bg-orange section">
   <div class="container">
     <div class="row">

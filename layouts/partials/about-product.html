@@ -1,0 +1,54 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.about_product.enable }}
+{{ with $data.homepage.about_product }}
+<section class="feature-list section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="heading">
+          <h2>{{ .title | markdownify }}</h2>
+        </div>
+      </div>
+    </div>
+    {{ range $index, $element := .items }}
+    {{- if ne (mod $index 2) 1 }}
+    <div class="row mb-40">
+      <div class="col-md-6 text-center mb-5 mb-lg-0">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+      </div>
+      <div class="col-md-6 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+    {{- else }}
+    <div class="row mb-40">
+      <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
+        <div class="content">
+          <h4 class="subheading">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | absURL }}" class="btn btn-main btn-main-sm">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2 order-1 text-center mb-5 mb-lg-0">
+        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

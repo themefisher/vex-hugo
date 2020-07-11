@@ -10,15 +10,22 @@
 
   {{ "<!-- plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .URL | absURL }} ">
+  <link rel="stylesheet" href="{{ .link | absURL }} ">
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $styles := resources.Get "style.css" | minify }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+
+  {{ with .Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  {{ end }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/google_analytics.html" . }}
+  {{ template "_internal/google_analytics_async.html" . }}
 
 </head>
