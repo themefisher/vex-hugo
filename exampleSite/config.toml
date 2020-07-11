@@ -6,8 +6,6 @@ theme = "vex-hugo"
 summarylength = "20"
 # google analytics
 googleAnalytics = "" # Ex: UA-123-45
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -21,7 +19,7 @@ link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themefisher-font/themefisher-font.min.css"
 [[params.plugins.css]]
-link = "plugins/owl-carousel/owl.carousel.css"
+link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
 
@@ -31,7 +29,7 @@ link = "plugins/jquery/jquery.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
-link = "plugins/owl-carousel/owl.carousel.min.js"
+link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
 link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 

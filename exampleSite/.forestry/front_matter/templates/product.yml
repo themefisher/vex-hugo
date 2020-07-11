@@ -1,0 +1,28 @@
+---
+label: Product
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: text
+  name: description
+  label: description
+- type: text
+  name: price
+  label: price
+- type: text
+  name: discount_price
+  label: discount_price
+- type: list
+  name: colors
+  label: colors
+- type: list
+  name: sizes
+  label: sizes

@@ -10,14 +10,9 @@
 
       <div class="collapse navbar-collapse text-center" id="navigation">
         <ul class="navbar-nav ml-auto">
-          {{ range site.Menus.home }}
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="{{site.BaseURL | absLangURL}}#{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
           {{ range site.Menus.main }}
           <li class="nav-item">
-            <a class="nav-link page-scroll" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
           </li>
           {{ end }}
         </ul>
