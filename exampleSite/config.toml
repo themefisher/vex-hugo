@@ -1,5 +1,5 @@
 ################################### Default Configuration ############################
-baseurl = "https://www.example.com/"
+baseurl = "http://demo.themefisher.com/vex-hugo/"
 title = "Vex | hugo landing page template"
 theme = "vex-hugo"
 # post excert
@@ -61,23 +61,23 @@ weight = 4
 
 # footer menu
 [[menu.footer]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[menu.footer]]
 name = "Blog"
 URL = "blog"
-weight = 2
+weight = 1
 
 [[menu.footer]]
 name = "Contact"
 URL = "contact"
+weight = 2
+
+[[menu.footer]]
+name = "Terms & Conditions"
+URL = "terms-conditions"
 weight = 3
 
 [[menu.footer]]
-name = "Privacy & Policy"
-URL = "#"
+name = "Privacy Policy"
+URL = "privacy-policy"
 weight = 4
 
 

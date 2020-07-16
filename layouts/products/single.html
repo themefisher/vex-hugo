@@ -4,8 +4,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-5 mb-4 mb-md-0">
-        <div class="sticky-image">
-          <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="{{ .Title }}">
+        <!-- product image slider -->
+        <div class="product-image-slider">
+          {{ range .Params.images }}
+          <div data-image="{{ . | absURL }}">
+            <img class="img-fluid w-100" src="{{ . | absURL }}" alt="product-image">
+          </div>
+          {{ end }}
         </div>
       </div>
       <div class="col-lg-6 col-md-7 offset-lg-1">
@@ -16,19 +21,20 @@
         {{if .Params.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.price }}</s>{{end}}
         </p>
         <button class="snipcart-add-item btn btn-main mb-5" 
-					  data-item-id="{{ .Title | urlize }}__{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}"
-						data-item-name="{{ .Title }}"
-						data-item-image="{{ .Params.image | absURL }}"
-						data-item-price="{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}" data-item-url="{{ .Permalink }}" 
-						{{ if .Params.colors }}
-						data-item-custom1-name="Choose Color"
-						data-item-custom1-options="{{ range $index, $element:= .Params.colors }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
-						{{ end }}
-						{{ if .Params.sizes }}
-						data-item-custom2-name="Choose Size"
-						data-item-custom2-options="{{ range $index, $element:= .Params.sizes }}{{ if eq $index 0 }}{{ . | title }}{{ else }}|{{ . | title }}{{ end }}{{ end }}"
-            {{ end }}>{{ i18n "add_to_cart"}}</button>
-            <div class="content">{{.Content}}</div>
+          data-item-id="{{.Title | urlize}}__{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}"
+          data-item-name="{{.Title}}"
+          data-item-image="{{range first 1 .Params.Images}}{{. | absURL}}{{end}}"
+          data-item-price="{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}" data-item-url="{{.Permalink}}" 
+          {{ if .Params.colors }}
+          data-item-custom1-name="Choose Color"
+          data-item-custom1-options="{{range $index, $element:= .Params.colors}}{{ if eq $index 0 }}{{. | title}}{{ else }}|{{. | title }}{{end}}{{end}}"
+          {{ end }}
+          {{ if .Params.sizes }}
+          data-item-custom2-name="Choose Size"
+          data-item-custom2-options="{{range $index, $element:= .Params.sizes}}{{if eq $index 0}}{{. | title}}{{else}}|{{. | title}}{{end}}{{end}}"
+          {{end}}>{{i18n "add_to_cart"}}
+        </button>
+        <div class="content">{{.Content}}</div>
       </div>
     </div>
   </div>

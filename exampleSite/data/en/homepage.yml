@@ -4,15 +4,10 @@ banner:
   title : "Believe in Technology, Make the change"
   content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, modi fugit in veritatis labore perferendis. Minima hic at, nostrum nihil!"
   image : "images/watch.png"
-  button: "Buy Now With $199"
-
-############################## product ###########################
-product:
-  name : "Smart watch"
-  image : "images/watch.png"
-  price : "199" 
-  colors : ["black","white","gray"]
-  sizes : ["small","medium","large"]
+  button:
+   enable : true
+   label : "Browse All Products"
+   link : "products"
 
 ############################# Feature ############################
 features:

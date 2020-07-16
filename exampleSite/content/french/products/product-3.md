@@ -1,7 +1,11 @@
 ---
 title: "Xiaomi Watch"
 date: 2019-10-17T11:22:16+06:00
-image: "images/showcase/showcase-3.png"
+images: 
+  - "images/showcase/showcase-3.png"
+  - "images/showcase/showcase-2.png"
+  - "images/showcase/showcase-1.png"
+  - "images/showcase/showcase-4.png"
 
 # meta description
 description : "this is meta description"

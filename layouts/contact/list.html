@@ -2,12 +2,11 @@
 
 <section class="section">
   <div class="container">
-    <div class="row justify-content-between">
+    <div class="row justify-content-center">
       {{ with .Params.office }}
-      <div class="col-lg-4 col-sm-6">
-        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+      <div class="col-lg-5 col-sm-6 mb-5">
+        <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <p>{{ .content | markdownify }}</p>
-
         <ul class="list-unstyled contact-list">
           <li class="mb-3"><a href="tel:{{ .mobile }}"><i class="tf-ion-ios-telephone mr-2"></i>
               {{ .mobile }}</a></li>
@@ -17,9 +16,9 @@
         </ul>
       </div>
       {{ end }}
-      <div class="col-lg-3 col-sm-6">
+      <div class="col-lg-3 col-sm-6 mb-5">
         {{ with .Params.opennig_hour }}
-        <h3 class="mb-4">{{ .title | markdownify }}</h3>
+        <h2 class="font-weight-bold mb-4">{{ .title | markdownify }}</h2>
         <ul class="list-unstyled">
           {{ range .day_time }}
           <li class="mb-2">{{ . | markdownify }}</li>
@@ -27,13 +26,23 @@
         </ul>
         {{ end }}
       </div>
-      <div class="col-lg-4">
-        <h3 class="mb-4">{{ .Title }}</h3>
-        <form action="{{ site.Params.contact_form_action }}" method="POST">
-          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
-          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
-          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
-          <button type="submit" value="send" class="btn btn-main btn-main-sm btn-block">{{ i18n "send" }}</button>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="font-weight-bold mb-4">{{ .Title | markdownify }}</h2>
+        <form action="{{ site.Params.contact_form_action }}" method="POST" class="row">
+          <div class="col-lg-6 mb-3">
+            <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          </div>
+          <div class="col-lg-6 mb-3">
+            <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          </div>
+          <div class="col-12 mb-3">
+            <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          </div>
+          <div class="col-12 text-right">
+            <button type="submit" value="send" class="btn btn-main btn-main-sm">{{ i18n "send" }}</button>
+          </div>
         </form>
       </div>
     </div>
