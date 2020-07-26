@@ -21,7 +21,7 @@ link = "plugins/themefisher-font/themefisher-font.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
-link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+link = "https://cdn.snipcart.com/themes/v3.0.6/default/snipcart.js"
 
 # JS Plugins
 [[params.plugins.js]]
