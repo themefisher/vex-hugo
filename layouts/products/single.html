@@ -15,8 +15,8 @@
       </div>
       <div class="col-lg-6 col-md-7 offset-lg-1">
         <h1 class="mb-4">{{ .Title }}</h1>
-        <p><strong>Colors:</strong> {{delimit .Params.colors ", "}}</p>
-        <p><strong>Sizes:</strong> {{delimit .Params.sizes ", "}}</p>
+        <p><strong>Colors:</strong> {{ with .Params.colors }}{{ delimit . ", "}}{{ end }}</p>
+        <p><strong>Sizes:</strong> {{ with .Params.sizes }}{{ delimit . ", "}}{{ end }}</p>
         <p class="price py-4">{{if .Params.discount_price}}{{site.Params.currency}}{{.Params.discount_price}}{{else}}{{site.Params.currency}}{{.Params.price}}{{end}}
         {{if .Params.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.price }}</s>{{end}}
         </p>
