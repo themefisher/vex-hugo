@@ -1,5 +1,5 @@
 ################################### Default Configuration ############################
-baseurl = "http://demo.themefisher.com/vex-hugo/"
+baseurl = "http://examplesite.com/"
 title = "Vex | hugo landing page template"
 theme = "vex-hugo"
 # post excert

@@ -8,9 +8,9 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: file
-  name: image
-  label: image
+- type: image_gallery
+  name: images
+  label: images
 - type: text
   name: description
   label: description
@@ -20,9 +20,9 @@ fields:
 - type: text
   name: discount_price
   label: discount_price
-- type: list
+- type: tag_list
   name: colors
   label: colors
-- type: list
+- type: tag_list
   name: sizes
   label: sizes
