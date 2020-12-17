@@ -25,7 +25,7 @@ link = "plugins/themefisher-font/themefisher-font.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.min.css"
 [[params.plugins.css]]
-link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.css"
+link = "https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -35,7 +35,7 @@ link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
-link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
+link = "https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"
 
 
 ###################################### Navigation ######################################
@@ -43,49 +43,49 @@ link = "https://cdn.snipcart.com/themes/v3.0.3/default/snipcart.js"
 # homepage section menu
 [[menu.main]]
 name = "Home"
-URL = "/"
+url = "/"
 weight = 1
 
 [[menu.main]]
 name = "Products"
-URL = "products"
+url = "products"
 weight = 2
 
 [[menu.main]]
 name = "Blog"
-URL = "blog"
+url = "blog"
 weight = 3
 
 [[menu.main]]
 name = "Review"
 pre = "#"
-URL = "testimonial"
+url = "testimonial"
 weight = 4
 
 [[menu.main]]
 name = "Contact"
-URL = "contact"
+url = "contact"
 weight = 5
 
 # footer menu
 [[menu.footer]]
 name = "Blog"
-URL = "blog"
+url = "blog"
 weight = 1
 
 [[menu.footer]]
 name = "Contact"
-URL = "contact"
+url = "contact"
 weight = 2
 
 [[menu.footer]]
 name = "Terms & Conditions"
-URL = "terms-conditions"
+url = "terms-conditions"
 weight = 3
 
 [[menu.footer]]
 name = "Privacy Policy"
-URL = "privacy-policy"
+url = "privacy-policy"
 weight = 4
 
 

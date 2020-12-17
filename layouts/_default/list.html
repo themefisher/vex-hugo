@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-6 align-self-center text-center text-md-left">
         <div class="content">
-          <h4 class="subheading">{{ .Title | markdownify }}</h4>
+          <h4 class="subheading"><a class="link-title" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h4>
           <p>{{ .Summary }}</p>
           <a href="{{ .Permalink }}" class="btn btn-main btn-main-sm">{{ i18n "read_more" }}</a>
         </div>
@@ -25,7 +25,7 @@
     <div class="row mb-40">
       <div class="col-md-6 order-md-1 order-2 align-self-center text-center text-md-left">
         <div class="content">
-          <h4 class="subheading">{{ .Title | markdownify }}</h4>
+          <h4 class="subheading"><a class="link-title" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h4>
           <p>{{ .Summary }}</p>
           <a href="{{ .Permalink }}" class="btn btn-main btn-main-sm">{{ i18n "read_more" }}</a>
         </div>

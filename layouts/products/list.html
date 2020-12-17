@@ -11,13 +11,13 @@
         <div class="block">
           <div class="gallery-overlay">
             <a href="{{ .Permalink }}" class="gallery-popup">
-              <i class="tf-ion-android-open"></i>
+              <i class="tf-ion-plus-round"></i>
             </a>
           </div>
           <img class="img-fluid" src="{{range first 1 .Params.images}}{{.|absURL}}{{end}}" alt="{{.Title}}">
         </div>
         <div class="product-info">
-        <h4 class="mb-2">{{.Title}}</h4>
+        <h4 class="mb-2"><a href="{{.Permalink}}" class="link-title">{{.Title}}</a></h4>
         <p class="price">{{if .Params.discount_price}}{{site.Params.currency}}{{.Params.discount_price}}{{else}}{{site.Params.currency}}{{.Params.price}}{{end}}
           {{if .Params.discount_price}}<s class="price">{{site.Params.currency}}{{ .Params.price }}</s>{{end}}
           </p>

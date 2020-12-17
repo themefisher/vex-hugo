@@ -620,3 +620,11 @@ textarea.form-control {
     background: #dadada;
   }
 }
+
+.link-title{
+  color: inherit;
+  text-decoration: none !important;
+  &:hover{
+    color: $primary-color;
+  }
+}
