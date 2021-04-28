@@ -23,7 +23,7 @@
         <button class="snipcart-add-item btn btn-main mb-5" 
           data-item-id="{{.Title | urlize}}__{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}"
           data-item-name="{{.Title}}"
-          data-item-image="{{range first 1 .Params.Images}}{{. | absURL}}{{end}}"
+          data-item-image="{{with .Params.Images}} {{range first 1 . }}{{. | absURL}}{{end}}{{end}}"
           data-item-price="{{if .Params.discount_price}}{{.Params.discount_price}}{{else}}{{.Params.price}}{{end}}" data-item-url="{{.Permalink}}" 
           {{ if .Params.colors }}
           data-item-custom1-name="Choose Color"
