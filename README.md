@@ -112,10 +112,10 @@ share those images.
 
 ## Hire Us
 We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://cutt.ly/ght-service)
+[services](https://gethugothemes.com/services/?ref=github)
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![timeframe](https://demo.gethugothemes.com/thumbnails/timeframe.webp)](https://gethugothemes.com/products/timeframe/) | [![parsa](https://demo.gethugothemes.com/thumbnails/parsa.webp)](https://gethugothemes.com/products/parsa/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Saasis](https://demo.gethugothemes.com/thumbnails/saasis.webp)](https://gethugothemes.com/products/saasis/) | [![revolve](https://demo.gethugothemes.com/thumbnails/revolve.webp)](https://gethugothemes.com/products/revolve/) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Timeframe** | **Parsa** |
+| **Premium Theme Bundle (40+)** | **Saasis** | **Revolve** |
