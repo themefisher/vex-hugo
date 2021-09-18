@@ -18,6 +18,9 @@ discount_price: "25.00"
 colors : ["black","white","gray"]
 sizes : ["small","medium","large"]
 
+# button link if you don't want to use snipcart. empty link will not show button
+button_link: "#"
+
 draft: false
 ---
 
