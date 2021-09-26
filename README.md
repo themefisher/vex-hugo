@@ -21,8 +21,7 @@
 ---
 
 <p align="center">
-  
-  ![images](images/tn.png)
+  <img src="https://demo.gethugothemes.com/thumbnails/vex.webp" alt="screenshot" width="100%">
 </p>
 
 ---
