@@ -3,7 +3,7 @@
 name = "Vex"
 license = "MIT"
 licenselink = "https://github.com/themefisher/vex-hugo/blob/master/LICENSE"
-description = "Vex by Themefisher ported to Hugo"
+description = "Vex is a product landing page Hugo theme. It is fully responsive and beautifully crafted with Product Showcase, Testimonials, and Email Subscription sections."
 homepage = "https://gethugothemes.com/products/vex-hugo-theme/"
 demosite = "https://demo.gethugothemes.com/vex/"
 tags = ["onepage", "bootstrap", "ecommerce", "single product", "product", "themefisher","gethugothemes"]
