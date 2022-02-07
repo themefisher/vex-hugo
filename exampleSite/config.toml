@@ -48,12 +48,12 @@ weight = 1
 
 [[menu.main]]
 name = "Products"
-url = "products"
+url = "products/"
 weight = 2
 
 [[menu.main]]
 name = "Blog"
-url = "blog"
+url = "blog/"
 weight = 3
 
 [[menu.main]]
@@ -64,28 +64,28 @@ weight = 4
 
 [[menu.main]]
 name = "Contact"
-url = "contact"
+url = "contact/"
 weight = 5
 
 # footer menu
 [[menu.footer]]
 name = "Blog"
-url = "blog"
+url = "blog/"
 weight = 1
 
 [[menu.footer]]
 name = "Contact"
-url = "contact"
+url = "contact/"
 weight = 2
 
 [[menu.footer]]
 name = "Terms & Conditions"
-url = "terms-conditions"
+url = "terms-conditions/"
 weight = 3
 
 [[menu.footer]]
 name = "Privacy Policy"
-url = "privacy-policy"
+url = "privacy-policy/"
 weight = 4
 
 
@@ -116,7 +116,7 @@ snipcart_api = "ZDgxY2ZiM2EtMWRmMi00M2ZkLWI1MDAtNzA2MDc0Y2Q1MzJlNjM3MTAzNDIwOTQ1
 [params.subscription]
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074"                                                           # replace this code with yours
 
 
 ################################### English language #####################################
