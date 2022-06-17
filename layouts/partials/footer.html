@@ -36,3 +36,5 @@
 <!-- Main Script -->
 {{ $script := resources.Get "js/script.js" }}
 <script src="{{ $script.Permalink }}"></script>
+
+{{- partial "footer_custom.html" . }}
