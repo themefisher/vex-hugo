@@ -1,4 +1,8 @@
-<h1 align=center>Vex Hugo | <a target="_blank" href="https://demo.gethugothemes.com/vex" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fvex%2F%23%2F">Page Speed (84%)</a></h1>
+<h1 align=center>Vex Hugo</h1> 
+<p align=center>Vex is a clean multipurpose e-commerce theme that makes building your first online store easier than ever. </p>
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/vex" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fvex%2Fsite%2F&form_factor=desktop">Page Speed (97%)</a></h2>
+
+
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.62.2" alt="Contributors">
@@ -26,7 +30,7 @@
 
 ---
 
-## Features
+## Key Features
 
 - Multiple language support (Fr, En)
 - Google analytics  support
@@ -91,8 +95,12 @@ issue](https://github.com/themefisher/vex-hugo/issues).
 - <https://myblogdog.com>
 - <https://cumulus-care.com/>
 - <https://www.officelady.nl/>
+- <https://artbookdecor.com/>
+- <https://newsunsbox.com/>
+- <https://www.citizenbar.fr/>
+- <https://www.shapewear.com.np/#/>
 
-Want to submit your own website powered by Vex Hugo? You can submit it [here](https://github.com/themefisher/vex-hugo/discussions/44).
+View all the websites powered by Vex Hugo [here](https://gethugothemes.com/showcase).Want to submit your own website powered by Vex Hugo? You can submit it [Click Here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
@@ -124,6 +132,6 @@ If you need to customize the theme or complete website development from scratch,
 <!-- premium themes -->
 ## Premium Themes By Us
 
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=vex_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Hargo](https://demo.gethugothemes.com/thumbnails/hargo.png)](https://gethugothemes.com/products/hargo/) | [![Loogbook](https://demo.gethugothemes.com/thumbnails/logbook.png)](https://gethugothemes.com/products/logbook/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=vex_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Hargo](https://demo.gethugothemes.com/thumbnails/hargo.png)](https://gethugothemes.com/products/hargo/) | [![Loogbook](https://demo.gethugothemes.com/thumbnails/logbook.png)](https://gethugothemes.com/products/logbook/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle** | **Hargo** | **logbook** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Hargo** | **logbook** |
