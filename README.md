@@ -39,7 +39,7 @@
 - Forestry cms pre-configured
 - Contact form Support
 - Mailchimp integrate
-- Google page speed optimized ( 84% )
+- Google page speed optimized ( 97% )
 - Open graph meta tag
 - Twitter card meta tag
 
