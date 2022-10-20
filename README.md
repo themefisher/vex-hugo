@@ -39,7 +39,7 @@
 - Forestry cms pre-configured
 - Contact form Support
 - Mailchimp integrate
-- Google page speed optimized ( 97% )
+- Google page speed optimized
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -89,18 +89,15 @@ issues](https://github.com/themefisher/vex-hugo/issues). Someone may have alread
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/vex-hugo/issues).
 
-## Vex Hugo Powered Websites
+## Submit Your Website To Our Showcase
 
-- <https://bitcoinminersuk.com/>
-- <https://myblogdog.com>
-- <https://cumulus-care.com/>
-- <https://www.officelady.nl/>
-- <https://artbookdecor.com/>
-- <https://newsunsbox.com/>
-- <https://www.citizenbar.fr/>
-- <https://www.shapewear.com.np/#/>
+Are you using Vex Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
-View all the websites powered by Vex Hugo [here](https://gethugothemes.com/showcase).Want to submit your own website powered by Vex Hugo? You can submit it [Click Here](https://gethugothemes.com/showcase).
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Vex Hugo from [here](https://gethugothemes.com/showcase?theme=vex). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Vex Hugo powered website.
 
 <!-- licence -->
 ## License
