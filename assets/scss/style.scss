@@ -219,6 +219,9 @@ a:active {
 }
 
 /* navigation */
+header.sticky-top {
+  z-index: 9 !important;
+}
 .navbar {
   &-brand {
     color: #444;
