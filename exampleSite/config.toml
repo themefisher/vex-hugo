@@ -38,57 +38,6 @@ link = "plugins/slick/slick.min.js"
 link = "https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js"
 
 
-###################################### Navigation ######################################
-
-# homepage section menu
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "Products"
-url = "products/"
-weight = 2
-
-[[menu.main]]
-name = "Blog"
-url = "blog/"
-weight = 3
-
-[[menu.main]]
-name = "Review"
-pre = "#"
-url = "testimonial"
-weight = 4
-
-[[menu.main]]
-name = "Contact"
-url = "contact/"
-weight = 5
-
-# footer menu
-[[menu.footer]]
-name = "Blog"
-url = "blog/"
-weight = 1
-
-[[menu.footer]]
-name = "Contact"
-url = "contact/"
-weight = 2
-
-[[menu.footer]]
-name = "Terms & Conditions"
-url = "terms-conditions/"
-weight = 3
-
-[[menu.footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
-weight = 4
-
-
 ########################### Default parameters ##########################
 [params]
 logo = "images/logo.png"
@@ -129,6 +78,57 @@ weight = 1
 copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
 
 
+###################################### Navigation english ######################################
+
+# homepage section menu
+[[Languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[Languages.en.menu.main]]
+name = "Products"
+url = "products/"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Blog"
+url = "blog/"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "Review"
+pre = "#"
+url = "testimonial"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+# footer menu
+[[Languages.en.menu.footer]]
+name = "Blog"
+url = "blog/"
+weight = 1
+
+[[Languages.en.menu.footer]]
+name = "Contact"
+url = "contact/"
+weight = 2
+
+[[Languages.en.menu.footer]]
+name = "Terms & Conditions"
+url = "terms-conditions/"
+weight = 3
+
+[[Languages.en.menu.footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 4
+
+
 ################################### French language #####################################
 [Languages.fr]
 languageName = "Fr"
@@ -137,3 +137,54 @@ contentDir = "content/french"
 weight = 2
 # copyright
 copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+
+
+###################################### Navigation english ######################################
+
+# homepage section menu
+[[Languages.fr.menu.main]]
+name = "Home"
+url = "fr/"
+weight = 1
+
+[[Languages.fr.menu.main]]
+name = "Products"
+url = "products/"
+weight = 2
+
+[[Languages.fr.menu.main]]
+name = "Blog"
+url = "blog/"
+weight = 3
+
+[[Languages.fr.menu.main]]
+name = "Review"
+pre = "#"
+url = "testimonial"
+weight = 4
+
+[[Languages.fr.menu.main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+# footer menu
+[[Languages.fr.menu.footer]]
+name = "Blog"
+url = "blog/"
+weight = 1
+
+[[Languages.fr.menu.footer]]
+name = "Contact"
+url = "contact/"
+weight = 2
+
+[[Languages.fr.menu.footer]]
+name = "Terms & Conditions"
+url = "terms-conditions/"
+weight = 3
+
+[[Languages.fr.menu.footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 4
