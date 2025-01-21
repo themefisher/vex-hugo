@@ -20,7 +20,7 @@
         {{ end }}
       </div>
       <div class="col-md-4 text-center align-self-center mb-4 mb-md-0">
-        <img class="img-fluid" src="{{ .image | absURL }}" alt="">
+        {{ partial "image.html" (dict "Src" .image "Alt" "image" "Class" "img-fluid" ) }}
       </div>
       <div class="col-md-4">
           {{ range .right_side }}

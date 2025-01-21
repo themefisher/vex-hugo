@@ -16,7 +16,7 @@
           <i class="tf-ion-quote"></i>
           <p>{{ .content | markdownify }}</p>
           <div class="author-details">
-            <img src="{{ .image | absURL }}" alt="{{ .name }}">
+            {{ partial "image.html" (dict "Src" .image "Alt" .name ) }}
             <h4>{{ .name }}</h4>
             <span>{{ .designation }}</span>
           </div>

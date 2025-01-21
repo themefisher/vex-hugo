@@ -1,0 +1,49 @@
+
+###################################### Navigation english ######################################
+
+[[main]]
+name = "Home"
+url = "fr/"
+weight = 1
+
+[[main]]
+name = "Products"
+url = "products/"
+weight = 2
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 3
+
+[[main]]
+name = "Review"
+pre = "#"
+url = "testimonial"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+# footer menu
+[[footer]]
+name = "Blog"
+url = "blog/"
+weight = 1
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 2
+
+[[footer]]
+name = "Terms & Conditions"
+url = "terms-conditions/"
+weight = 3
+
+[[footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 4
